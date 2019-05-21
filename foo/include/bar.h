@@ -1,4 +1,4 @@
 #include <iostream>
 #include <string>
 
-void print_foo(const std::string& s);
+void print_bar(const std::string& s);

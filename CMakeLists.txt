@@ -5,7 +5,7 @@ project(use-foo)
 set(CMAKE_MODULE_PATH cmake)
 
 set(FOO_ROOT ${CMAKE_CURRENT_LIST_DIR}/foo)
-find_package(Foo REQUIRED)
+find_package(Foo REQUIRED COMPONENTS Bar)
 
 add_executable(main src/main.cpp)
 target_link_libraries(main Foo::Foo)
